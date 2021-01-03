@@ -1,5 +1,3 @@
-#This is my model for task1 (Supervised Learning) for the Sparks foundation
-
 #importing the needed modules 
 import pandas as pd
 import matplotlib.pyplot as plt
