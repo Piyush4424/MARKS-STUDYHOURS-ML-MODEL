@@ -21,8 +21,7 @@ for i in df['Hours']:
 for j in df['Scores']:
     list_scores.append(j)
 
-#Training the model with the test variables (Hours and Scores) and finding the relationship
-#between them using Linear Regression     
+#Training the model with the test variables (Hours and Scores) and finding the relationship between them using Linear Regression     
 slope , intercept , r , p , std_err = stats.linregress(list_hours,list_scores)
 
 def myfunc(list_hours):
@@ -38,12 +37,12 @@ plt.show()
 print("R-square value :- %f"%(r))
 
 #asking for the user input for predicting the value
-#x = float(input("Enter the number of hours for which you want the predict the scores"))
-#score_main = myfunc(x)
-#print(score_main)
+x = float(input("Enter the number of hours for which you want the predict the scores"))
+score_main = myfunc(x)
+print(score_main)
 
-score_main = myfunc(9.25)
-print("Score when the time of study is 9.25 hours is %f"%(score_main))
+#score_main = myfunc(9.25)
+#print("Score when the time of study is 9.25 hours is %f"%(score_main))
     
 
 
